@@ -1,0 +1,428 @@
+:root{
+
+    --nav-bar:#292e33;
+    --background-lightcolor:#252525;
+    --secondary-shadow: #a17a69;
+    --background:black;
+
+    --button:#0ef;
+    }
+
+body{
+    background-color:var(--background) ;
+    box-sizing: border-box;
+    color:white;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overscroll-behavior: none;
+}    
+
+
+.bu{
+    background-color: var(--button)!important;
+    border:var(--button)!important;
+    height:40px;
+    border-radius: 15px;
+   
+}
+
+
+
+
+@media (min-width: 200px) {
+    .line{
+       line-height:200%;
+    }
+ }
+
+ @media (min-width: 420px) {
+    .line{
+       line-height:260%;
+    }
+ } 
+
+ @media (min-width: 460px) {
+    .line{
+       line-height:280%;
+    }
+ } 
+   
+ @media (min-width: 761px) {
+    .line{
+       line-height:320%;
+    }
+ }
+
+    
+ @media (min-width: 992px) {
+    .line{
+       line-height:200%;
+    }
+ }
+
+ @media (min-width: 1245px) {
+    .line{
+       line-height:250%;
+    }
+ }
+
+@media (max-width: 426px) {
+    #shape li{
+      display: none;
+    }    
+ }
+
+
+.navbar{
+  background-color:var(--nav-bar)!important;
+    box-shadow: 3px 2px 10px black; 
+  
+}  
+.nav-item {
+    color: var(--nav-bar)!important;
+}             
+
+
+.card-custom-content {
+    background-color:var(--button)!important; 
+    box-shadow: 3px 2px 15px var(--button);
+    border-radius:20px;
+    color:black;
+}    
+.main button{
+    background-color: var(--button)!important;
+    border:var(--button)!important;
+    color:#081b29;
+} 
+.skills button{
+    background-color: var(--button)!important;
+    border:var(--button)!important;
+    color:#081b29;
+    box-shadow: 2px 2px 5px #0ef;
+} 
+.main button:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 20px cyan, 0 0 50px cyan, 0 0 50px cyan;
+    color:#081b29;
+}         
+.main{
+    background-color:var(--background)!important;  
+}
+
+
+.proj{
+    background-color:var( --background-lightcolor)!important;  
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--button);
+}
+
+
+.frontFlip {
+    background-color:var( --background-lightcolor)!important;  
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--button);
+}
+ .backFlip {
+    background-color: var(--nav-bar)!important;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.about, .skills, .copyrights{
+    background-color:#252525;  
+}
+.about li{
+
+    background-color:var( --button)!important;     
+ 
+    margin:2px;
+    color:black;
+}
+
+
+
+
+/* home main section */
+
+.main, .about, .edu, .skills, .project{
+    min-height:100vh;
+  
+}
+
+#profile{
+animation:rotating;
+animation-timing-function: ease-in-out;
+animation-duration: 2s;
+animation-delay:0s;
+animation-iteration-count: 1;    
+animation-direction:normal;
+}
+
+@keyframes rotating {
+    0%{
+        transform: rotateY(0deg);    
+     }
+     50%{
+        transform: rotateY(360deg);
+     }
+}
+
+svg{ 
+    color: var(--button);
+}    
+    
+.profileBlock{
+  border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+box-shadow: 0 0 15px var(--button);
+border: 3px solid var(--nav-bar);
+outline: 2px solid var(--button);  
+width:100%; height:300px;background-color:#0ef; z-index:1;
+}   
+
+/* home main section */
+
+
+
+/* about section */
+
+.animes{
+   border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+   box-shadow: 0 0 15px var(--button);
+   border: 3px solid var(--nav-bar);
+   outline: 2px solid var(--button);
+   animation-name:morph;
+   animation-timing-function: linear;
+   animation-duration: 2s;
+   animation-delay:0s;
+
+ 
+   animation-iteration-count: infinite;   
+   animation-direction:normal;
+  
+}
+
+@keyframes morph{
+    0%,100%{
+       
+        
+   border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%; 
+     }
+    30%{
+        
+       border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; 
+     }
+     80%{
+     
+       border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;      
+     } 
+     80%{
+       
+       border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;      
+     } 
+}
+
+
+
+
+
+.anime{
+    animation-name:f;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay:0s;
+    position:relative;
+    animation-iteration-count: 1;    
+    animation-direction:normal;
+}
+@keyframes one{
+
+    0%{
+        left:-20%;
+        transform: rotate(360deg);
+        width:250px;
+        
+     }
+     50%{
+         left:80%;
+         width:350px;
+     }
+     100%{
+        left:0;         
+     } 
+}    
+
+
+
+.card-custom{
+    position: relative;
+}
+.card-custom-image{
+  overflow:hidden;
+}
+.card-custom-image img{
+    opacity: 1;
+    display: block; 
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width:100%;
+    
+}
+  #middle {
+    transition:.5s ease;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    transform: scale(0);  
+  
+  } 
+
+  #text{   
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#0ef;
+  }
+  .card-custom:hover .card-custom-image img {
+    opacity: 0.3;
+    transform:scale(1.1);  
+ 
+
+  }
+  .card-custom:hover #middle{ 
+    transform: scale(1);  
+   
+  }
+
+  .card-custom:hover .card-custom-content{ 
+background-color: var(--background-lightcolor)!important;
+color: #0ef;
+
+  }
+  
+/* education section */
+
+
+/* skills section */
+
+.skills .con{
+    position: relative;
+    perspective: 1500px; 
+}
+.con .flip{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+.frontFlip{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;   
+}
+.backFlip{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.container .flip:hover{
+    transform:rotateY(180deg);
+}
+
+
+/* skills section */
+
+
+/* copyright section */
+#inner{
+     width:100%;
+     height:150px;
+     background-color:#252525;
+     border-radius:30px;
+     position: absolute;
+     top:-10px;
+     left:-10px;
+     border: 2px solid black;
+}
+
+#outer{
+    width:30%;
+    height:150px;
+    background-color:#292e33;
+    border-radius:30px;
+    position: relative;
+    border: 2px solid black;
+}
+/* copyright section */
+
+
+.contacts{
+    background-color:black!important;   
+    border-radius: 11px;  
+    width:100%;  
+}
+
+@media (min-width: 567px) {
+    .contacts{
+        width:50%; 
+    }
+ }
+
+.contacts input, button{
+    height:50px;
+}
+
+.contacts textarea{
+    height:80px;
+}
+
+.contacts ::placeholder{
+    text-align: center;
+}
+
+.contacts button{
+   background-color: #0ef;
+}
+
+.contacts button:hover{
+    background-color: #007780;
+ }
+
+
+ @media (max-width:768px) {
+    #qrcode{
+       display: none!important;
+    }
+ }
+
+ @media (min-width: 920px) and (max-width: 950px) {
+    #outer{
+        width: 50% !important;; 
+    }
+}
+
+
+ @media (min-width: 992px) {
+    #outer{
+        width: 50%!important;
+    }
+ }
+
+
+
